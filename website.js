@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 // Define the first animation function
 var i = 0;
 var txt1 = "Hi :) I'm Thomas,";
@@ -40,3 +33,27 @@ function typeWriter2()
   
   // Start the second animation after the first animation has finished
   setTimeout(typeWriter2, txt1.length * speed);
+
+
+//Email copy function
+var copyEmailbutton = document.querySelector('.copy-link-button');
+
+copyEmailbutton.addEventListener('click', function(event)
+{
+    var copyTextarea = document.querySelector('.copy-link-input');
+    copyTextarea.focus();
+    copyTextarea.select();
+
+    try 
+    {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copying text command was ' + msg);
+    }   
+    catch (err)
+    {
+        console.log('Oops, unable to copy');
+    }
+});
+
+
