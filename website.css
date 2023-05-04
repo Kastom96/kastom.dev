@@ -1,0 +1,277 @@
+    body{background-color:#0f0f0f;}
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap');
+    #head
+    {
+        
+        align-items:baseline;
+        color:#ffff;
+        transition:opacity 0.15s
+    }
+    
+    #language-icon
+    {
+        font-variation-settings: 'opsz' 100;
+        cursor: pointer;
+    }
+   
+    #language-button
+    {
+        background-color: transparent;
+        top: 0px;
+        left: 0px;
+        height: 24px;
+        width: 24px;
+        border: none;
+        z-index: 2;
+    }
+
+    #language-menu
+    {
+        position: fixed;
+        left: 26px;
+        top: 26px;
+        width: 80px;
+        height: 78px;
+        display:none;
+        border-color: white;
+        border-style: solid;
+        border-radius: 8px;
+        font-family: 'Source Code Pro';
+        font-size: 14px;
+        background-color: #0f0f0f;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    #language-menu:hover
+    {
+        color:#0f0f0f
+    }
+    #language-menu.active
+    {
+        display:inline-block;
+    }
+    #language-menu.new-class
+    {
+        display:inline-block;
+    }
+    #language-menu ul
+    {
+        position:relative;
+        height: 100%;
+        margin:0%;
+        padding-left:0%;
+        text-decoration: none;
+    }
+    #language-menu ul li
+    {
+        list-style: none;
+        display: inline-block;
+        padding-left: 5px;
+        width:70px;
+        padding: 4px 5px;
+    }
+    #deutsch
+    {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    #rumaenisch
+    {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    #language-menu ul li:hover 
+    {
+        color: #0f0f0f;
+        background-color: white;
+        
+    }
+    #language-menu ul li a
+    {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+    #language-menu ul li a:hover
+    {
+        color: #0f0f0f;
+    }
+   
+
+    
+    
+    
+    .about-me
+    {
+        font-family:'Source Code Pro';
+        font-size: 20px;
+        padding:1px;
+        border-radius:20px;
+        background-color:white;
+        color:#0f0f0f;
+        position:fixed;
+        right:20px;
+        top: 15px;
+
+    }
+    .about-me:hover
+    {
+        opacity: 0.75;
+    } 
+    .about-me:active
+    {
+        opacity: 0.5;
+    }    
+    #main-text
+    {
+        color:#ffff;
+        position:absolute;
+        top:50%;
+        transform: translate(0, -50%);
+        font-family:'Source Code Pro';
+        font-size:50px;
+    }
+    .first-line
+    {
+        font-size:50px;
+    }
+    .second-line
+    {
+        font-size:50px;
+    }
+    #bottom
+    {
+        position:fixed;
+        bottom:5px;
+        left:10px;
+        font-size: 25px;
+        color:#ffff;
+        cursor:pointer;
+        transition:opacity 0.15s
+    }
+    .material-symbols-outlined
+    {
+        margin:1px;
+        color:white;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 1000,
+        'GRAD' 0,
+        'opsz' 48; 
+    }
+    .material-symbols-outlined:hover
+    {
+        opacity: 0.75;
+        
+    }
+    .material-symbols-outlined:active
+    {
+        opacity: 0.5
+    }
+    .ig-icon
+    {
+        height:24px;
+        filter:invert(100%) sepia(93%) saturate(30%) hue-rotate(71deg) brightness(108%) contrast(108%);
+    }
+    .ig-icon:hover
+    {
+        opacity: 0.75;
+    }
+    .ig-icon:active
+    {
+        opacity: 0.5
+    }
+    .tiktok-icon
+    {
+        width:24px;
+        margin-left:8px;
+        filter:invert(100%) sepia(93%) saturate(30%) hue-rotate(71deg) brightness(108%) contrast(108%);
+    }
+    .tiktok-icon:hover
+    {
+        opacity: 0.75;
+    }
+    .tiktok-icon:active
+    {
+        opacity: 0.5;
+    }
+
+    .copy-link-button
+    {
+        background-color: #0f0f0f;
+        border:none;
+        cursor:pointer;
+    }
+    .copy-link-button:hover + .copy-link-input
+    {
+        opacity: 1;
+        transition: 0.8s
+    }
+    .copy-link-button:active + .copy-link-input
+    {
+        visibility: hidden;
+        opacity: 0;
+    }
+    #copymail
+    {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    }
+    .copy-link-input
+    {
+        opacity:0;
+        font-size: 17px;
+        border:none;
+        width: 212px;
+        background-color: #0f0f0f;
+        color: white;
+        position:relative;
+        bottom:6px;
+        left: -10px;
+    }
+    #notification 
+    {
+        position: center;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        background-color: #0f0f0f;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Source Code Pro';
+        font-size: 20px;
+        font-weight: bold;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+    }  
+    #notification.show 
+    {
+        visibility: visible;
+        color: white;
+        opacity: 1;
+    }
+    
+    #me
+    {
+        position:fixed;
+        right:0;
+        bottom:0;
+    }
+    .myself
+    {
+        background-color:#0f0f0f;
+        border: none;
+        height: 50px;
+        cursor:grabbing;
+    }
+    .andi
+    {
+        height:50px;
+    }            
